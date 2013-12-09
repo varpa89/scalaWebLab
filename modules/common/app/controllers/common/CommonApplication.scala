@@ -12,7 +12,7 @@ import play.api.mvc.{Controller, Action}
 object CommonApplication extends Controller{
   def index() = Action {
     implicit request =>
-      Ok
+      Ok(views.html.common.main(""))
   }
 
 }
